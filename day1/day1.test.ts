@@ -5,7 +5,7 @@ import {
   countOccurrences,
   countSimilarity,
   findTotalDistance,
-} from "./index.ts";
+} from "./day1.ts";
 
 const list1 = [3, 4, 2, 1, 3, 3];
 const list2 = [4, 3, 5, 3, 9, 3];
