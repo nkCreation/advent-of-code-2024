@@ -15,6 +15,6 @@ const [list1, list2] = lines.reduce(
 );
 
 export default function () {
-  console.log(findTotalDistance(list1, list2));
-  console.log(calculateSimilarity(list1, list2));
+  console.log(`Day 1 — Part 1 : ${findTotalDistance(list1, list2)}`);
+  console.log(`Day 1 — Part 2 : ${calculateSimilarity(list1, list2)}`);
 }

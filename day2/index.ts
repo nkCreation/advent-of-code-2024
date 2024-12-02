@@ -8,6 +8,6 @@ const reports = lines.map((line) => {
 });
 
 export default function () {
-  console.log(isStrictlySafeReports(reports));
-  console.log(isSafeReportsWithTolerance(reports));
+  console.log(`Day 2 — Part 1 : ${isStrictlySafeReports(reports)}`);
+  console.log(`Day 2 — Part 2 : ${isSafeReportsWithTolerance(reports)}`);
 }
