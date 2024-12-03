@@ -35,6 +35,6 @@ export function calculateSimilarity(list1: number[], list2: number[]): number {
 
       return acc;
     },
-    [0, new Map<number, number>()] as [number, Map<number, number>]
+    [0, new Map<number, number>()] as [number, Map<number, number>],
   )[0];
 }

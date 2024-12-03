@@ -11,7 +11,7 @@ const [list1, list2] = lines.reduce(
 
     return acc;
   },
-  [[], []] as [number[], number[]]
+  [[], []] as [number[], number[]],
 );
 
 export default function () {

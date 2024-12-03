@@ -19,7 +19,7 @@ export function isAllUnique(array: number[]): boolean {
 export function isBetweenStep(array: number[], step: number): boolean {
   return array.every(
     (value, index, baseArray) =>
-      Math.abs(value - baseArray[Math.max(index - 1, 0)]) <= step
+      Math.abs(value - baseArray[Math.max(index - 1, 0)]) <= step,
   );
 }
 
