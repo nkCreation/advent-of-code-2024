@@ -7,5 +7,7 @@ export async function readFileLineByLine(filePath: string): Promise<string[]> {
     lines.push(l);
   }
 
+  file.close();
+
   return lines;
 }

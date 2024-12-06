@@ -3,6 +3,7 @@ import day2 from "./day2/index.ts";
 import day3 from "./day3/index.ts";
 import day4 from "./day4/index.ts";
 import day5 from "./day5/index.ts";
+import day6 from "./day6/index.ts";
 
 day1();
 console.log("———————");
@@ -13,3 +14,5 @@ console.log("———————");
 day4();
 console.log("———————");
 day5();
+console.log("———————");
+day6();
