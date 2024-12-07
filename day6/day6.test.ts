@@ -37,8 +37,8 @@ Deno.test("find point in map", () => {
         "..........".split(""),
         "..........".split(""),
         "..X.......".split(""),
-      ]
-    )
+      ],
+    ),
   ).toBe("X");
 });
 
@@ -148,7 +148,7 @@ Deno.test("reconstruct map from flat array", () => {
   ];
 
   expect(
-    reconstructMap(exampleExerciseMap.flat(1), exampleExerciseMap[0].length)
+    reconstructMap(exampleExerciseMap.flat(1), exampleExerciseMap[0].length),
   ).toEqual(exampleExerciseMap);
 });
 

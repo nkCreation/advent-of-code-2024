@@ -34,7 +34,7 @@ export function isOutOfMap(coord: Coord, map: Map): boolean {
 
 export function nextCoordForDirection(
   point: Coord,
-  direction: Direction
+  direction: Direction,
 ): Coord {
   return [
     point[0] + directions[direction][0],
@@ -45,7 +45,7 @@ export function nextCoordForDirection(
 export function moveUntilHit(
   direction: Direction,
   startCoord: Coord,
-  map: Map
+  map: Map,
 ) {
   let coord = startCoord;
   const coordValue = getPointValueInMap(coord, map);
@@ -148,7 +148,7 @@ export function findObstructions(map: Map) {
   return map.flat(1).reduce((acc, val, index) => {
     if (val !== "^") {
       const result = launchPatrol(
-        reconstructMap(map.flat(1).toSpliced(index, 1, "#"), lineLength)
+        reconstructMap(map.flat(1).toSpliced(index, 1, "#"), lineLength),
       );
 
       if (!result) {
