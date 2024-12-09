@@ -11,3 +11,10 @@ export async function readFileLineByLine(filePath: string): Promise<string[]> {
 
   return lines;
 }
+
+export async function writeTextToFile(filePath: string, text: string) {
+  const file = await Deno.create(filePath);
+  const writer = file.writable.getWriter();
+  await writer.write(new TextEncoder().encode(text));
+  await writer.close();
+}
